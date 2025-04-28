@@ -1,0 +1,141 @@
+.about {
+    background-color: var(--background-alt);
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    font-size: 1.125rem;
+    text-align: justify;
+  }
+  
+  .about-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dark-mode .card-icon {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+  
+  .about-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-card ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .timeline {
+    position: relative;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-left: 2px solid var(--primary-color);
+  }
+  
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+  
+  .timeline-item .date {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dark-mode .timeline-item .date {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+  
+  .timeline-item h4 {
+    margin: 0.5rem 0;
+    font-size: 1.125rem;
+  }
+  
+  .timeline-item p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-item ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+  }
+  
+  .timeline-item ul li {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

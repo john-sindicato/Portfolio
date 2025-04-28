@@ -1,0 +1,125 @@
+.footer {
+    background-color: var(--background-alt);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-logo p {
+    color: var(--text-light);
+  }
+  
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: var(--text-light);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-mode .social-icons a {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .footer-bottom p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .made-with {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .heart-icon {
+    color: #ef4444;
+    animation: heartbeat 1.5s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  
