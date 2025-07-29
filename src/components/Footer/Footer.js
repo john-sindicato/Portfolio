@@ -37,13 +37,13 @@ const Footer = () => {
           <div className="footer-social">
             <h4>Connect With Me</h4>
             <div className="social-icons">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/john-sindicato" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/john-lloyd-abellanosa-356a95362/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </a>
-              <a href="mailto:johnlloyd@example.com" aria-label="Email">
+              <a href="mailto:johnlloydabellanosa0@gmail.com.com" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
